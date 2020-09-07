@@ -102,6 +102,7 @@ class BPStockListVC: BaseVC {
     }
     
     @IBAction func retryBtnPressed(_ sender: Any) {
+        searchTxtField.resignFirstResponder()
         fetchListStock()
         self.retryBtn.isHidden = true
     }
