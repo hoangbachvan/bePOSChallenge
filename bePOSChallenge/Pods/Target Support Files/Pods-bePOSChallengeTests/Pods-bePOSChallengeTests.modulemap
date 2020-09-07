@@ -1,0 +1,6 @@
+framework module Pods_bePOSChallengeTests {
+  umbrella header "Pods-bePOSChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aiH-OY-MHB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite-->
+        <scene sceneID="flf-b4-xXK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aiH-OY-MHB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite" image="film" catalog="system" selectedImage="film.fill" id="kyR-Id-aJi"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DRH-5J-wKs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g8R-zZ-Tk2" kind="relationship" relationship="rootViewController" id="8Nf-jB-0de"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSM-3T-4sU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="1008"/>
+        </scene>
+        <!--Stock FavoriteVC-->
+        <scene sceneID="JiR-Zh-HoF">
+            <objects>
+                <viewController storyboardIdentifier="BPStockFavoriteVC" id="g8R-zZ-Tk2" customClass="BPStockFavoriteVC" customModule="BaseProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HIE-OG-0K9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lnu-FE-Oem">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lnu-FE-Oem" firstAttribute="leading" secondItem="6Xp-Zf-q0y" secondAttribute="leading" id="5WT-Qi-M8e"/>
+                            <constraint firstItem="Lnu-FE-Oem" firstAttribute="top" secondItem="6Xp-Zf-q0y" secondAttribute="top" id="TzA-OU-32f"/>
+                            <constraint firstItem="6Xp-Zf-q0y" firstAttribute="bottom" secondItem="Lnu-FE-Oem" secondAttribute="bottom" id="njp-Ws-mRF"/>
+                            <constraint firstItem="6Xp-Zf-q0y" firstAttribute="trailing" secondItem="Lnu-FE-Oem" secondAttribute="trailing" id="tZs-sp-8n4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Xp-Zf-q0y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h7l-eJ-M3M"/>
+                    <connections>
+                        <outlet property="tableView" destination="Lnu-FE-Oem" id="4dY-UI-vaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Crp-or-xhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1499" y="1025"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="film" catalog="system" width="128" height="93"/>
+        <image name="film.fill" catalog="system" width="128" height="93"/>
+    </resources>
+</document>

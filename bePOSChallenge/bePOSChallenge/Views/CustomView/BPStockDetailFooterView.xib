@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BPStockDetailFooterView" customModule="BaseProduct" customModuleProvider="target">
+            <connections>
+                <outlet property="companyDescriptionLbl" destination="GfV-P5-JxT" id="E4C-3h-mXR"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="xug-N8-aw6"/>
+                <outlet property="descriptionValueLbl" destination="UEA-1I-lHP" id="vvc-XD-N7z"/>
+                <outlet property="heightContraint" destination="dmq-fm-ZtA" id="x1W-Zb-ukq"/>
+                <outlet property="loadMoreBtn" destination="HCD-zs-s0t" id="Z88-nu-5GA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfV-P5-JxT">
+                    <rect key="frame" x="16" y="16" width="382" height="21"/>
+                    <color key="backgroundColor" red="0.63921568630000003" green="0.64313725489999995" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gx5-Xw-6F1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEA-1I-lHP">
+                    <rect key="frame" x="16" y="60" width="382" height="818"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="dmq-fm-ZtA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCD-zs-s0t">
+                    <rect key="frame" x="182" y="894" width="50" height="30"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="0EF-dR-Psc"/>
+                        <constraint firstAttribute="height" constant="30" id="BkQ-nQ-2xZ"/>
+                    </constraints>
+                    <state key="normal" title="More"/>
+                    <connections>
+                        <action selector="moreBtnPressed:" destination="-1" eventType="touchUpInside" id="FuM-c9-dYC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="GfV-P5-JxT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="6w5-jC-sLr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UEA-1I-lHP" secondAttribute="trailing" constant="16" id="Drk-U7-1UL"/>
+                <constraint firstItem="UEA-1I-lHP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="I9t-Bf-AKT"/>
+                <constraint firstAttribute="trailing" secondItem="GfV-P5-JxT" secondAttribute="trailing" constant="16" id="MTI-jY-Puz"/>
+                <constraint firstItem="HCD-zs-s0t" firstAttribute="top" secondItem="UEA-1I-lHP" secondAttribute="bottom" constant="16" id="NXi-3v-RHy"/>
+                <constraint firstItem="UEA-1I-lHP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="Vt6-BQ-Rcr"/>
+                <constraint firstAttribute="bottom" secondItem="HCD-zs-s0t" secondAttribute="bottom" constant="16" id="bZH-9V-Ifs"/>
+                <constraint firstItem="HCD-zs-s0t" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="hUQ-3V-hPK"/>
+                <constraint firstItem="GfV-P5-JxT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="wAs-u9-UUX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="85.507246376811594" y="17.410714285714285"/>
+        </view>
+    </objects>
+</document>
